@@ -15,6 +15,6 @@
          <Font size="33.0" />
       </font>
    </Label>
-   <Button mnemonicParsing="false"  text=" Rastrear uma Encomenda" />
-    <Button text="Salvar uma Encomenda" />
+   <Button mnemonicParsing="false" text=" Rastrear uma Encomenda" />
+    <Button prefHeight="24.0" prefWidth="192.0" text="Salvar uma Encomenda" />
 </VBox>
