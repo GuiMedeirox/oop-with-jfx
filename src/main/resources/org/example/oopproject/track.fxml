@@ -7,19 +7,18 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.oopproject.Track">
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.oopproject.Controller.TrackerController">
    <children>
       <Label layoutX="101.0" layoutY="14.0" text="Rastrear Pacote">
          <font>
             <Font size="50.0" />
          </font>
       </Label>
-      <TextField layoutX="215.0" layoutY="93.0" promptText="LX123456789BR" />
-      <Button layoutX="264.0" layoutY="130.0" mnemonicParsing="false" text="Rastrear" />
-      <ScrollPane layoutX="102.0" layoutY="176.0" prefHeight="200.0" prefWidth="399.0">
+      <TextField fx:id="labelTrackingCode" layoutX="193.0" layoutY="81.0" prefHeight="37.0" prefWidth="193.0" promptText="LX123456789BR" />
+      <Button fx:id="buttonTrackingPacket" layoutX="231.0" layoutY="135.0" mnemonicParsing="false" onAction="#trackPackage" prefHeight="29.0" prefWidth="117.0" text="Rastrear" />
+      <ScrollPane layoutX="101.0" layoutY="194.0" prefHeight="336.0" prefWidth="399.0">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="335.0" prefWidth="385.0" />
         </content>
       </ScrollPane>
    </children>
