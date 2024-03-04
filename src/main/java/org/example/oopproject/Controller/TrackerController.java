@@ -5,11 +5,14 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import org.example.oopproject.SceneSwitch.SceneSwitch;
 
-public class TrackerController{
+import java.io.IOException;
+
+public class TrackerController {
 
     @FXML
-    private Button buttonBackToMain;
+    private Button buttonBackMenu;
 
     @FXML
     private Button buttonTrackingPacket;
@@ -19,6 +22,11 @@ public class TrackerController{
 
     @FXML
     private AnchorPane sceneTrackingPane;
+
+    @FXML
+    void onButtonBackClick() throws IOException {
+        new SceneSwitch(sceneTrackingPane, "main.fxml");
+    }
 
     @FXML
     void trackPackage(ActionEvent event) {
